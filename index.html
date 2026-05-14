@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>📓 Smart Journal</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<header>
+  <h1>📓 Smart Journal</h1>
+  <div>
+    <button onclick="toggleDarkMode()">🌙 Dark Mode</button>
+    <select onchange="applyTheme(this.value)">
+      <option value="">🎨 Theme</option>
+      <option value="day">Day</option>
+      <option value="ocean">Ocean</option>
+      <option value="neon">Neon</option>
+      <option value="stars">Stars</option>
+    </select>
+    <button onclick="logout()">🚪 Logout</button>
+  </div>
+</header>
+
+<section>
+  <h2>New Entry</h2>
+  <textarea id="entryText" placeholder="Write your thoughts..."></textarea>
+
+  <select id="mood">
+    <option value="">Select Mood</option>
+    <option value="5">😊 Happy</option>
+    <option value="4">🤩 Excited</option>
+    <option value="3">😐 Neutral</option>
+    <option value="2">😰 Anxious</option>
+    <option value="1">😢 Sad</option>
+  </select>
+
+  <select id="tags">
+    <option value="">Tag</option>
+    <option value="Work">Work</option>
+    <option value="Health">Health</option>
+    <option value="Travel">Travel</option>
+    <option value="Family">Family</option>
+  </select>
+
+  <button onclick="startDictation()">🎤 Voice</button>
+  <button onclick="saveEntry()">💾 Save</button>
+</section>
+
+<section>
+  <h2>Timeline</h2>
+  <ul id="entryTimeline"></ul>
+</section>
+
+<section>
+  <h2>Mood Chart</h2>
+  <canvas id="moodChart"></canvas>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

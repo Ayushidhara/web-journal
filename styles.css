@@ -1,0 +1,107 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg,#ffe6f0,#e0f7ff);
+  margin: 0;
+  padding: 20px;
+  transition: 0.3s;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* SECTIONS (CARDS) */
+section {
+  background: rgba(255,255,255,0.85);
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* INPUTS */
+textarea, select {
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+/* BUTTONS */
+button {
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 8px;
+  background: #ff6a00;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+/* HEADER BUTTONS FIX */
+header button {
+  width: auto;
+}
+
+/* LIST */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: #f4f4f4;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 8px;
+}
+
+/* DARK MODE */
+body.dark-mode {
+  background: #111;
+  color: white;
+}
+
+body.dark-mode section {
+  background: rgba(255,255,255,0.1);
+}
+
+/* THEMES */
+body.theme-day {
+  background: #fefcea;
+  color: #000;
+}
+
+body.theme-ocean {
+  background: linear-gradient(to right,#2193b0,#6dd5ed);
+  color: white;
+}
+
+body.theme-neon {
+  background: linear-gradient(to right,#fc466b,#3f5efb);
+  color: white;
+}
+
+body.theme-stars {
+  background: #000;
+  color: white;
+}
+
+/* LOGIN BOX */
+.auth-container {
+  max-width: 400px;
+  margin: 100px auto;
+  padding: 30px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
